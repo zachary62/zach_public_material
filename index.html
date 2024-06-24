@@ -1,0 +1,255 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zachary Huang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .social-icons {
+             display: flex;
+             flex-direction: column;
+             gap: 1em;
+             font-size: 1em;
+             line-height: 1.5;
+         }
+         .social-icons a {
+             color: #333;
+             text-decoration: none;
+             display: flex;
+             align-items: center;
+         }
+         .social-icons i {
+             margin-right: 0.5em;
+             width: 20px;
+             height: 20px;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             border: 1px solid #333;
+             border-radius: 4px;
+         }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 40px;
+            padding: 40px;
+        }
+
+        .left-column {
+            text-align: center;
+            max-width: 200px;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        .profile-image {
+            display: block;
+            max-width: 150px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .left-column h1 {
+            font-size: 24px;
+            margin: 20px 0;
+            font-weight: 300;
+
+        }
+
+        .right-column {
+            font-size: 14px;
+            max-width: 700px;
+            margin-left: 10px;
+        }
+
+        .right-column h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .right-column p, .right-column ol, .right-column ul {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid #333;
+            font-size: 14px;
+            grid-column: 1 / -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <img src="http://www.columbia.edu/~zh2408/673faef28905077ac9b519aff8c174c9.jpg" alt="Dr. John Doe" class="profile-image">
+            <h1>Zezhou Huang</h1>
+            <p>zh2408@columbia.edu<br>
+
+            <div class="social-icons">
+                <!-- Document -->
+                <div class="social-icons">
+                <!-- Document -->
+                <a href="https://github.com/zachary62/zach_public_material/blob/main/Resume.pdf" target="_blank">
+                    <i class="fas fa-file-alt"></i> Résumé
+                </a>
+                <!-- Github -->
+                <a href="https://github.com/zachary62" target="_blank">
+                    <i class="fab fa-github"></i> Github
+                </a>
+                <!-- Linkedin -->
+                <a href="https://www.linkedin.com/in/zachary-h-23aa37172/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i> DB Posts
+                </a>
+                <!-- Twitter -->
+                <a href="https://twitter.com/ZacharyHuang12" target="_blank">
+                    <i class="fab fa-twitter"></i> LLM Posts
+                </a>
+            </div>
+        </div>
+        </div>
+        <div class="right-column">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I'm Zezhou Huang. You can call me Zachary.</p>
+<p>
+I'm a PhD student at Columbia University advised by Professor <a href="http://www.cs.columbia.edu/~ewu/">Eugene Wu</a>. My work centers on developing <a href="https://github.com/Cocoon-Data-Transformation/cocoon"><b>a semantic layer for large join graphs in cloud data warehouses.</b></a>
+If you look at the image below, you'll see what join graph from a place like IMDB can look like - it's a bit messy, right? My job is to clean up that mess.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto; border:1px solid #ddd; border-radius:8px; padding:5px;" src="https://www.researchgate.net/profile/Peter-Boncz/publication/319893076/figure/fig2/AS:631637725438007@1527605577677/MDB-schema-with-key-foreign-key-relationships-Underlined-attributes-are-primary-keys.png" width=500></p>
+<p>My previous projects built interactive dashboards, ML systems, and data discovery tools on top of join graphs. Now, I'm also looking into how to solve data problems with large language models (LLM) and speed up query processing with GPU acceleration.</p>
+
+<p>The <a href="https://www.cs.columbia.edu/2023/2023-phd-students-awarded-prestigious-fellowships/" target="_blank">Google PHD Fellowship and Avanessian Fellowship</a> provide generous funding for my research.</p>
+
+
+
+
+            </section>
+            <section id="publications">
+                <h2>Publications</h2>
+                <ol>
+                    <li><b>Transform Table to Database Using Large Language Models</b>
+                        <br>Zezhou Huang, Jia Guo, Eugene Wu. <br>
+                        <font size="1">Under Review</font>.
+                    </li>
+                    <li><b>SET: Searching Effective Supervised Learning Augmentations in Large Tabular Data Repositories</b>
+                        <br>Jiaxiang Liu, Zezhou Huang, Eugene Wu. <br>
+                        <font size="1">GUIDEAI@SIGMOD 2024</font>.
+                    </li>
+                    <li><b>Disambiguate Entity Matching through Relation Discovery with Large Language Models</b>
+                        <br>Zezhou Huang. <br>
+                        <font size="1"><a href="https://arxiv.org/abs/2403.17344">GUIDEAI@SIGMOD 2024</a></font>.
+                    </li>
+                    <li><b>Cocoon: Semantic Table Profiling Using Large Language Models</b>
+                        <br>Zezhou Huang, Eugene Wu. <br>
+                        <font size="1"><a href="https://arxiv.org/abs/2404.12552">HILDA@SIGMOD 2024</a></font>.
+                    </li>
+                    <li><b>Relationalizing Tables with Large Language Models: The Promise and Challenges</b>
+                        <br>Zezhou Huang, Eugene Wu. <br>
+                        <font size="1"><a href="https://www.wis.ewi.tudelft.nl/assets/files/dbml2024/DBML24_paper_2.pdf">DBML@ICDE 2024</a></font>,
+                        <font size="1"><a href="https://youtu.be/PwZsVDuRrw0">Video</a></font>.
+                    </li>
+                    <li><b>The Fast and the Private: Task-based Dataset Search</b>
+                        <br>Zezhou Huang, Jiaxiang Liu, Haonan Wang, Eugene Wu. <br>
+                        <font size="1"><a href="https://arxiv.org/abs/2308.05637">CIDR 2024</a></font>.
+                    </li>
+                    <li><b>Lightweight Materialization for Fast Dashboards Over Joins</b>
+                        <br>Zezhou Huang, Eugene Wu. <br>
+                        <font size="1"><a href="https://arxiv.org/abs/2308.12480">SIGMOD 2024</a></font>.
+                    </li>
+                    <li><b>Data Ambiguity Strikes Back: How Documentation Improves GPT's Text-to-SQL</b>
+                        <br>Zezhou Huang, Pavan Kalyan Damalapati, Eugene Wu. <br>
+                        <font size="1"><a href="https://arxiv.org/abs/2310.18742">TRL@NeurIPS 2023</a></font>,
+                        <font size="1"><a href="https://neurips.cc/virtual/2023/81310">Video</a></font>.
+                    </li>
+                    <li>
+                        <b>Saibot: A Differentially Private Data Search Platform.</b> <br>
+                        Zezhou Huang, Jiaxiang Liu, Daniel Gbenga Alabi, Raul Castro Fernandez, Eugene Wu. <br>
+                        <font size="1"><a href="https://arxiv.org/abs/2307.00432">VLDB 2023</a></font>.
+                    </li>
+                    <li>
+                        <b>Kitana: Efficient Data Augmentation Search for AutoML.</b> <br>
+                        Zezhou Huang, Pranav Subramaniam, Raul Castro Fernandez, Eugene Wu. <br>
+                        <font size="1"><a href="https://arxiv.org/abs/2305.10419">Arxiv</a></font>.
+                    </li>
+                    <li>
+                        <b>Random Forests over normalized data in CPU-GPU DBMSes.</b> <br>
+                        Zezhou Huang, Pavan Kalyan Damalapati, Rathijit Sen, Eugene Wu. <br>
+                        <font size="1"><a href="https://dl.acm.org/doi/10.1145/3592980.3595318">DaMoN@SIGMOD 2023</a></font>,
+                        <font size="1"><a href="https://github.com/zachary62/zach_public_material/blob/main/JoinBoostGPU.pdf">Slides</a></font>.
+                    </li>
+                    <li>
+                        <b>JoinBoost: Grow Trees Over Normalized Data Using Only SQL.</b> <br>
+                        Zezhou Huang, Rathijit Sen, Jiaxiang Liu, Eugene Wu. <br>
+                        <font size="1"><a href="https://arxiv.org/abs/2307.00422">VLDB 2023</a>,
+                        <a href="https://www.databricks.com/dataaisummit/session/joinboost-data-base-machine-learning-tree-models/">Video 1</a>,
+                        <a href="https://www.youtube.com/watch?v=5-HA_7KuD30">Video 2</a></font>,
+
+                    </li>
+                    <li>
+                        <b>Aggregation Consistency Errors in Semantic Layers and How to Avoid Them.</b> <br>
+                        Zezhou Huang, Pavan Kalyan Damalapati, Eugene Wu. <br>
+                        <font size="1"><a href="https://arxiv.org/abs/2307.00417">HILDA@SIGMOD 2023</a></font>,
+                        <font size="1"><a href="https://github.com/zachary62/zach_public_material/blob/main/Hilda%20aggregation.pdf">Slides</a></font>.
+                    </li>
+
+                    <li><b>Reptile: Aggregation-level Explanations for Hierarchical Data.</b> <br>
+                    Zezhou Huang, Eugene Wu. <br>
+                    <font size="1"><a href="https://dl.acm.org/doi/abs/10.1145/3514221.3517854">SIGMOD 2022</a></font>, <font size="1"><a href="https://www.youtube.com/embed/X5zioELfSjM">Video</a></font>,
+                    <font size="1"><a href="https://www.engineering.columbia.edu/news/using-tech-help-african-farmers-collect-payouts">News</a></font>,
+                    <font size="1"><a href="https://www.cs.columbia.edu/2022/voices-of-cs-zachary-huang/#">Interview</a></font>
+                    </li>
+
+                    <li><b>Calibration: A Simple Trick for Wide-table Delta Analytics</b> <br>
+                    Zezhou Huang, Eugene Wu. <br>
+                    <font size="1"><a href="https://arxiv.org/abs/2210.03851">Arxiv</a></font>.
+                    </li>
+
+                    <li><b>Spatial and hedonic analysis of housing prices in Shanghai</b> <br>
+                    Zezhou Huang, Ruishan Chen, Di Xu, Wei Zhou. <br>
+                    <font size="1"><a href="https://pages.cs.wisc.edu/~zacharyh/1-s2.0-S0197397517301984-main.pdf">Habitat International 2017</a></font>.
+                    </li>
+                </ol>
+            </section>
+            <section id="service">
+                <h2>Service</h2>
+                    <ul>
+                        <li> <a href="https://tabular-data-analysis.github.io/tada2024/">TaDA@VLDB 2024</a> PC Member</li>
+                        <li> <a href="https://guide-ai-workshop.github.io/">GUIDEAI@SIGMOD 2024</a> PC Member</li>
+                        <li> <a href="http://deem-workshop.org/">DEEM@SIGMOD 2024</a> PC Member</li>
+                        <li> <a href="https://big.csr.unibo.it/dataplat2024/">DataPlat@ICDE 2024</a> PC Member</li>
+                        <li> <a href="https://www.wis.ewi.tudelft.nl/dbml2024">DBML@ICDE 2024</a> PC Member</li>
+                        <li> <a href="https://table-representation-learning.github.io/">TRL@NeurIPS 2023</a> PC Member</li>
+                        <li> <a href="https://www.wis.ewi.tudelft.nl/dbml2023">DBML@ICDE 2023</a> PC Member</li>
+                    </ul>
+                </section>
+
+                <section id="random">
+                    <h2>Random</h2>
+                    I developed a game, once live on the App Store, now offline due to the Apple Developer Program fee. Someone made a <a href="https://www.youtube.com/watch?v=FMLxDuxm4DI">gameplay video</a> about it. If there's interest, I can bring it back.
+                    </section>
+            </div>
+
+
+
+
+        </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+    </html>
+
